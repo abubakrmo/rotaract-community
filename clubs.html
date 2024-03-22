@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Clubs</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800,900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<style>
+    @media screen and (max-width:576px) {
+        .form{
+            width: 95% !important;
+        }
+        .input-group{
+            width: 100% !important;
+            margin-left: 0px !important;
+
+        }
+        .card{
+            width: 80%;
+            margin-left: 30px !important;
+        }
+    }
+    option, select{
+      color: rgb(105, 101, 101);
+    }
+    label{
+        color: #202020;
+    }
+    form{
+        font-size: 14px;
+    }
+    option, select{
+        color: rgb(105, 101, 101) !important;
+        font-size: 14px !important;
+    }
+    input{
+        font-size: 14px;
+    }
+
+    .card {
+        border-radius: 20px;
+    }
+    .input-group{
+        margin-left: 48em;
+    }
+    .detailslink{
+        color: white;
+    }
+    .detailslink:hover{
+        background-color: transparent !important;
+        color: black !important;
+    }
+</style>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="../Rotaract/assets/img/rd9110ng-logo.png" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+          <li class="dropdown"><a href="#"><span >About us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="./clubs.html">Clubs</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#">Events</a></li>
+          <li><a class="nav-link scrollto" href="./gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="./blog.html">Blog 9110NG</a></li>
+          <li><a class="nav-link scrollto " href="./donate.html">Donate</a></li>
+          <li class="dropdown active"><a href="./contactus.html"><span>Contact us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="./joinus.html">Join US</a></li>
+              <li><a href="./partner.html">Partner With Us</a></li>
+            </ul>
+          </li>
+          <li><a class="getstarted scrollto" href="">Newsletter</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <div class="container-fluid" id="home" style="background-image: linear-gradient(to right,#2193b0,#6dd5ed); padding-top: 100px; padding-bottom: 100px;">
+        <div class="section-title">
+            <h1 class="mt-5 text-white font-weight-bold">Clubs</h1>
+            <p class="pb-0"></p>
+            <a href="./index.html" class="text-white">Home /</a> <span class="text-white">Clubs</span>
+        </div>
+  </div>
+  <div class="container pt-3">
+    <form action="">
+        <div class="input-group pb-3" style="width: 40%;">
+            <input type="text"  placeholder="Search for club" id="searchfield" onkeyup="myfunc(this.value)" class="form-control" >
+            <div class="input-group-append">
+                <span class="input-group-text" style="background-color: #3dd5e0; color: white; border: 0px;">
+                    <img src="./assets/img/icons8-search-25.png" alt="">
+                </span>
+            </div>
+        </div>
+    </form>
+
+  </div>
+  <div class="container mt-3" id="mycards" style="margin-bottom: 50px;">
+    <div class="row" id="row">
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Abeokuta</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Amuwo-main</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ewekoro</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Okokomaiko</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Sagamu</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ojodu a</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ikorodu Golden</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ikorodu Metro</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ajara</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ogscotech</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ikoyi</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">LASUCOM</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Omole Golden</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Egbeda</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Akowonjo</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Iju-ishaga</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Isolo metro</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Agege</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Lekki Phase 1</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">TASUED</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Isolo</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ikenne</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">FUNAAB</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Alagbado</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Obantoko</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">MAPOLY</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Oceanography</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ijebu-Ife</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ijebu-Ode</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Mushin-Golden</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">OTA</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Gbagada</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #0F2027, #203A43, #2c5364);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Gbagada South</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #176580, #176580, #1b6785);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">OOU</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Lagos(UNILAG)</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div> 
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Medilag Golden</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #08709c, #22596b, #1d3742);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Igando</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;"><a class="detailslink" href="./club-details.html"> View Details</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card mb-5" style="background-image: linear-gradient(to right, #172830, #04151a, #020e13);">
+                <div class="card-body">
+                    <h4 class="text-center text-white px-2 py-3" style="font-weight: 600">Ojokoro</h4>
+                </div>
+                <div class="card-footer py-2">
+                    <button class="btn btn-outline-light mx-auto d-block" style="font-size: 12px; border-radius: 50px;">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer id="footer" style="background-color: #222222;">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3 class="text-white">About Us</h3>
+                <p class="text-white">
+                It began on 13th march 1968 with Rotaract of University of North Carolina, 
+                USA and birthed in Africa in 22nd April 1969 with Rotaract Club of Lagos (University of Lagos) 
+                thus making our district a home of the 1st Rotaract Club in Africa.
+                </p>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4 class="text-white">Quick Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="./index.html" class="text-white">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#" class="text-white">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4 class="text-white">Contact Info</h4>
+                <ul>
+                  <li class="text-white"><img src="./assets/img/icons8-place-marker-25 (1).png" alt="" class="pr-4 contactimg" style="width: 11%;">
+                    Address: 8, Ladoke Akintola Street, GRA, Ikeja.
+                  </li>
+                  <li class="text-white"><img src="./assets/img/icons8-phone-25 (1).png" alt="" class="pr-4 contactimg" style="width: 11%;">
+                    DRR: +234 806 409 0446
+                  </li>
+                  <li class="text-white"><img src="./assets/img/icons8-phone-25 (1).png" alt="" class="pr-4 contactimg" style="width: 11%;">
+                    DRRE: +234 803 369 9311
+                  </li>
+                  <li class="text-white"><img src="./assets/img/icons8-mail-25 (1).png" alt="" class="pr-4 contactimg" style="width: 11%;">
+                    Email: info@rotaractdistrict9110.org
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4 class="text-white">Social Community</h4>
+                <p class="text-white">Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                  <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+        <p class="text-white text-center pt-5">
+          Copyright © 2019-2020. Rotaract District 9110, Nigeria. All Rights Reserved // Developed and Maintained by 
+          <a href="">tiamiyun.com</a>
+        </p>
+      </footer><!-- End Footer -->
+    
+    
+    
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script>
+    let row = document.querySelector('#row')
+    let cols = row.querySelectorAll('.col-sm-3')
+    function myfunc(val){
+        let inp = val.toLowerCase()
+        cols.forEach(element => {
+            let card = element.querySelectorAll('.card .card-body h4');
+            card.forEach(item => {
+                if(item.textContent.toLowerCase().startsWith(inp)) {
+                    element.style.display = "block"
+                } else {
+                    element.style.display="none"
+                }
+                
+            })
+        })
+    }
+  </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="jsc/multi-animated-counter.js"></script>
+  
+</body>
